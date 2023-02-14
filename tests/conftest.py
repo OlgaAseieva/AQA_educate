@@ -9,6 +9,10 @@ class User:
         self.name = "Olga"
         self.second_name = "As"
 
+    # def create(self, name, second_name):
+    #     self.name = name
+    #     self.second_name = second_name
+
     def remove(self):
         self.name = ""
         self.second_name = ""

@@ -39,6 +39,8 @@ import pytest
 
 #     yield user
 #     user.remove()
+
+
 @pytest.mark.check
 def test_change_name(user):
     assert user.name == "Olga"
@@ -47,13 +49,15 @@ def test_change_name(user):
 def test_change_second_name(user):
     assert user.second_name == "As"
 
-@pytest.mark.parametrize(
-        "name, second_name",
-          [('Olga', 'As'),
-           ('Sergii', 'Butenko')])
-def user(name, second_name):
-    assert user.name == name
-    assert user.second_name == second_name
+
+
+# @pytest.mark.parametrize(
+#         "name, second_name",
+#           [('Olga', 'As'),
+#            ('Sergii', 'Butenko')])
+# def user(name, second_name):
+#     assert user.name == name
+#     assert user.second_name == second_name
 
 
     
