@@ -17,7 +17,7 @@ def test_third_request():
     r = requests.get('https://api.github.com/users/OlgaAseieva')
     body = r.json()
     headers = r.headers
-    # defunkt - forbidern 
+    
     # print(f'Response is: {r.text}')
     # print(f'Response Body: {r.json()}')
     print(f'Response Stasus code is: {r.status_code}')
