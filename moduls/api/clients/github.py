@@ -24,3 +24,9 @@ class GitHub():
                       params= {'q': name})
         body = r.json()
         return body
+    
+    def search_topic(self, topic):
+        r = requests.get('https://api.github.com/search/topics',
+                      params= {'q': topic})
+        body = r.json()
+        return body
